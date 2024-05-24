@@ -277,8 +277,9 @@ function pmproup_pmpro_confirmation_message($message)
 		if(!empty($lastpage))
 		{
 			//okay update the message
+			/* translators: %1$s: text, %2$s: text, %3$s: permalink, %4$s post title */
 			$message .= sprintf(
-				'<p><strong>%s</strong>. %s <a href="%s">%s</a></p>',
+				'<p><strong>%1$s</strong>. %2$s <a href="%3$s">%4$s</a></p>',
 				__( 'Important', 'pmpro-user-pages' ),
 				__( 'Updates on your order will be posted here:', 'pmpro-user-pages' ),
 				get_permalink( $lastpage->ID ),
